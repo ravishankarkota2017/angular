@@ -82,7 +82,7 @@ or you can register providers with specific modules or components.
 You register providers in the metadata of the service (in the `@Injectable()` decorator),
 or in the `@NgModule()` or `@Component()` metadata 
 
-* By default, the Angular CLI command [`ng generate service`](cli/generate) registers a provider with the root injector for your service by including provider metadata in the `@Injectable()` decorator. The tutorial uses this method to register the provider of  HeroService class definition.
+* By default, the Angular CLI command [`ng generate service`](cli/generate) registers a provider with the root injector for your service by including provider metadata in the `@Injectable()` decorator. The tutorial uses this method to register the provider of  HeroService class definition. Please note that existing Angular CLI command no longer registers a provider with in @Injectable. You might need to register the provider either at Module or Component level.
 
    ``` 
    @Injectable({
